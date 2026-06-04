@@ -59,9 +59,9 @@ The cube features a checkerboard pattern across all 6 faces, creating a visually
 
 | Face | Color | Hex |
 | :--- | :--- | :--- |
-| **Left, Right, Back, Bottom** | <span style="color:#0033D9">■</span> Blue | `#0033D9` |
-| **Front, Top** | <span style="color:#4DA6FF">■</span> Light Blue | `#4DA6FF` |
-| **Edges** | <span style="color:#000000">■</span> Dark Outline | `#000000` (at 55% alpha) |
+| **Left, Right, Back, Bottom** | ![#0033D9](https://via.placeholder.com/15/0033D9/000000?text=+) Blue | `#0033D9` |
+| **Front, Top** | ![#4DA6FF](https://via.placeholder.com/15/4DA6FF/000000?text=+) Light Blue | `#4DA6FF` |
+| **Edges** | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) Dark Outli
 
 ### 🧮 Mathematical Foundation
 
