@@ -72,21 +72,31 @@ Z-rotation:
 |x'|   |cos(θz)  -sin(θz)  0|   |x|
 |y'| = |sin(θz)   cos(θz)  0| × |y|
 |z'|   |   0        0      1|   |z|
+
 Perspective ProjectionKotlinzInv = focalLength / (focalLength - z)
 screenX = rotatedX * zInv + centerX
 screenY = rotatedY * zInv + centerY
-Note: Focal length = 400 → Creates natural perspective distortion📊 Point SystemThe cube uses 14 strategic points:Plaintext    7-------8         14 Points Total:
+Note: Focal length = 400 → Creates natural perspective distortion📊
+
+Point SystemThe cube uses 14 strategic points    
+
+    7-------8         14 Points Total:
    /|      /|         • 8 Corners (0-3, 7-10)
   0-------1 |         • 6 Face Centers (4-6, 11-13)
   | 10----|-9         
   |/      |/          Face centers allow fan-triangulation
   3-------2           (4 triangles per face)
-🚀 Getting StartedPrerequisitesAndroid Studio Hedgehog (2023.1.1) or laterKotlin 1.9.0+Android SDK 24+Installation1️⃣ Clone the repositoryBashgit clone [https://github.com/yourusername/rotating-cube.git](https://github.com/yourusername/rotating-cube.git)
+
+🚀 Getting StartedPrerequisitesAndroid Studio Hedgehog (2023.1.1) or laterKotlin 1.9.0+Android SDK 24+Installation
+
+1️⃣ Clone the repositoryBashgit clone [https://github.com/yourusername/rotating-cube.git](https://github.com/yourusername/rotating-cube.git)
 cd rotating-cube
 2️⃣ Open in Android StudioBash# Open the project directory
 # Let Gradle sync complete
 3️⃣ Run on device/emulatorBash# Press Shift+F10 or click Run button
+
 # Minimum API 24 (Android 7.0)
+
 📁 Project StructurePlaintextapp/src/main/java/com/example/rotatingcubeamigademo/
 │
 ├── MainActivity.kt          # Entry point & 3D rendering
@@ -105,19 +115,27 @@ cd rotating-cube
         ├── strings.xml
         ├── colors.xml
         └── themes.xml
+        
 🎮 CustomizationChange Rotation SpeedKotlin// In Vector3DScene()
 val angleSkipX = 1f  // 🔄 X-axis speed
 val angleSkipY = 2f  // 🔄 Y-axis speed  
 val angleSkipZ = 3f  // 🔄 Z-axis speed
+
 Adjust PerspectiveKotlinval proj = 400f  
-// 🔍 Lower = more distortion
-// 🔭 Higher = more orthographic
-Modify ColorsKotlin// 💙 Dark blue faces
+
+ 🔍 Lower = more distortion
+ 🔭 Higher = more orthographic
+
+Modify ColorsKotlin
+
+💙 Dark blue faces
 private val colorBlue = Color(0.00f, 0.20f, 0.85f)
 
-// 💎 Light blue faces
+💎 Light blue faces
 private val colorLightBlue = Color(0.30f, 0.65f, 1.00f)
+
 Change Animation DurationKotlinanimation = tween(4000, easing = LinearEasing)
 // ⏱ 4000ms per full rotation
 // Use FastOutSlowInEasing for easing
+
 🧪 PerformanceMetricValueFrame Rate60 FPS (stable)Triangles/frame24 sorted + drawnCPU Usage<5% on modern devicesMemory<10MB allocationGPU LoadMinimal (software rendering)
