@@ -1,10 +1,6 @@
  Rotating 3D Cube - Android Jetpack Compose Demo
 <div align="center">
 
-https://img.shields.io/badge/Kotlin-1.9%252B-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white
-https://img.shields.io/badge/Jetpack%2520Compose-Latest-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white
-https://img.shields.io/badge/Android-API%252024%252B-3DDC84?style=for-the-badge&logo=android&logoColor=white
-https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
 <p align="center"> <img src="https://raw.githubusercontent.com/yourusername/rotating-cube/main/screenshots/demo.gif" alt="Rotating Cube Demo" width="300"/> </p><h3>✨ Real-time 3D rotating cube with custom rendering engine</h3></div>
 📖 Overview
 
