@@ -55,13 +55,14 @@ The cube features a checkerboard pattern across all 6 faces, creating a visually
 ### 📐 The 3D Pipeline
 
 [3D Coordinates] -> [Rotation Matrices] -> [Perspective Projection] -> [Painter's Algorithm] -> [Canvas Draw]
+
 ### 🎨 Color Scheme
 
 | Face | Color | Hex |
 | :--- | :--- | :--- |
-| **Left, Right, Back, Bottom** | ![#0033D9](https://via.placeholder.com/15/0033D9/000000?text=+) Blue | `#0033D9` |
-| **Front, Top** | ![#4DA6FF](https://via.placeholder.com/15/4DA6FF/000000?text=+) Light Blue | `#4DA6FF` |
-| **Edges** | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) Dark Outli
+| **Left, Right, Back, Bottom** | ![](https://img.shields.io/badge/-%230033D9?style=flat-square&color=%230033D9) Blue | `#0033D9` |
+| **Front, Top** | ![](https://img.shields.io/badge/-%234DA6FF?style=flat-square&color=%234DA6FF) Light Blue | `#4DA6FF` |
+| **Edges** | ![](https://img.shields.io/badge/-%23000000?style=flat-square&color=%23000000) Dark Outline | `#000000` (at 55% alpha) |
 
 ### 🧮 Mathematical Foundation
 
